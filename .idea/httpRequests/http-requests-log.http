@@ -1,0 +1,494 @@
+DELETE http://127.0.0.1:8000/user/7/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+###
+
+DELETE http://127.0.0.1:8000/user/7/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+<> 2021-10-13T124930.405.json
+
+###
+
+POST http://127.0.0.1:8000/user/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+<> 2021-10-13T124857.201.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/increment_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+<> 2021-10-13T123233.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/increment_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+<> 2021-10-13T123231.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+<> 2021-10-13T123155.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+<> 2021-10-13T123154.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+<> 2021-10-13T123148.500.html
+
+###
+
+POST http://127.0.0.1:8000/user/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+<> 2021-10-13T123122.405.json
+
+###
+
+HEAD http://127.0.0.1:8000/user/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+###
+
+HEAD http://127.0.0.1:8000/user/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+###
+
+HEAD http://127.0.0.1:8000/user/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+###
+
+POST http://127.0.0.1:8000/user/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+<> 2021-10-13T122842.405.json
+
+###
+
+POST http://127.0.0.1:8000/user?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+<> 2021-10-13T122835.500.html
+
+###
+
+POST http://127.0.0.1:8000/user?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+<> 2021-10-13T122821.500.html
+
+###
+
+POST http://127.0.0.1:8000/users/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+<> 2021-10-13T122806.404.html
+
+###
+
+POST http://127.0.0.1:8000/user/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+<> 2021-10-13T122647.405.json
+
+###
+
+POST http://127.0.0.1:8000/user?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name":"Patrcia", "age":90, "address":"New York"}
+
+<> 2021-10-13T122631.500.html
+
+###
+
+GET http://127.0.0.1:8000/user?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-13T122511.200.json
+
+###
+
+GET http://127.0.0.1:8000/user/1/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-13T122443.200.json
+
+###
+
+GET http://127.0.0.1:8000/user?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-13T122432.200.json
+
+###
+
+DELETE http://127.0.0.1:8000/user/6/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+###
+
+GET http://127.0.0.1:8000/user/6/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T031307.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/19/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025734-1.404.json
+
+###
+
+POST http://127.0.0.1:8000/user/19/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025734.404.json
+
+###
+
+POST http://127.0.0.1:8000/user/19/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025732.404.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025720.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025719.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025646.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025643.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025642.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025641-1.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025641.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025639.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025559.400.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025558.400.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025557.400.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025556.400.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025555.400.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025554.400.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+<> 2021-10-12T025552.400.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name": "Gustavo", "age": 55, "points":100, "address":"Golbba"}
+
+<> 2021-10-12T025539.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name": "Gustavo", "age": 55, "points":100, "address":"Golbba"}
+
+<> 2021-10-12T025537.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name": "Gustavo", "age": 55, "points":100, "address":"Golbba"}
+
+<> 2021-10-12T025531.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name": "Gustavo", "age": 55, "points":100, "address":"Golbba"}
+
+<> 2021-10-12T025530-1.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name": "Gustavo", "age": 55, "points":100, "address":"Golbba"}
+
+<> 2021-10-12T025530.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name": "Gustavo", "age": 55, "points":100, "address":"Golbba"}
+
+<> 2021-10-12T025529.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name": "Gustavo", "age": 55, "points":100, "address":"Golbba"}
+
+<> 2021-10-12T025528.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name": "Gustavo", "age": 55, "points":100, "address":"Golbba"}
+
+<> 2021-10-12T025527.200.json
+
+###
+
+POST http://127.0.0.1:8000/user/1/decrement_points/?format=json
+Accept: */*
+Cache-Control: no-cache
+:
+
+{"name": "Gustavo", "age": 55, "points":100, "address":"Golbba"}
+
+<> 2021-10-12T025454.200.json
+
+###
+

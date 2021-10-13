@@ -1,12 +1,11 @@
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework import routers, serializers
-from rest_framework import status, viewsets
+from rest_framework import routers, serializers, mixins
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.schemas import get_schema_view
+from rest_framework.viewsets import GenericViewSet
 
-# Serializers define the API representation.
 from leaderboard.models import User
 
 
@@ -17,10 +16,13 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
 
 # ViewSets define the view behavior.
-class UserViewSet(viewsets.ModelViewSet):
+class UserViewSet(mixins.CreateModelMixin,
+                   mixins.RetrieveModelMixin,
+                   mixins.DestroyModelMixin,
+                   mixins.ListModelMixin,
+                   GenericViewSet):
     """
-    Used to create, read, update, delete, and list users.
-    Two extra actions are available under the user instance (i.e. /user/1/) to increment and decrement the user's points.
+    Used to create, read, delete, and list users. Two extra actions are available under the user instance (i.e. /user/1/) to increment and decrement the user points.
     """
     queryset = User.objects.all().order_by('-points')
     serializer_class = UserSerializer
@@ -49,7 +51,6 @@ class UserViewSet(viewsets.ModelViewSet):
 # Routers provide an easy way of automatically determining the URL conf.
 router = routers.DefaultRouter()
 router.register(r'user', UserViewSet)
-
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
