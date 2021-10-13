@@ -4,6 +4,7 @@ from rest_framework import routers, serializers
 from rest_framework import status, viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from rest_framework.schemas import get_schema_view
 
 # Serializers define the API representation.
 from leaderboard.models import User
@@ -56,4 +57,9 @@ urlpatterns = [
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('admin/', admin.site.urls),
+    path('schema/', get_schema_view(
+        title="Leaderboard Application",
+        description="Canada Drives Leaderboard Application",
+        version="1.0.0"
+    ), name='schema'),
 ]
