@@ -1,3 +1,49 @@
-from django.shortcuts import render
+from rest_framework import mixins
+from rest_framework.decorators import action
+from rest_framework.response import Response
+from rest_framework.viewsets import GenericViewSet
 
-# Create your views here.
+from leaderboard.models import User
+from leaderboard.serializers import UserSerializer, CreateUserSerializer
+
+
+class CreateUserView(mixins.CreateModelMixin,
+                     GenericViewSet):
+    """
+    Used to create, read, delete, and list users. Two extra actions are available under the user instance (i.e. /user/1/) to increment and decrement the user points.
+    """
+    queryset = User.objects.all().order_by('-points')
+    serializer_class = CreateUserSerializer
+
+
+class UserViewSet(mixins.RetrieveModelMixin,
+                  mixins.DestroyModelMixin,
+                  mixins.ListModelMixin,
+                  GenericViewSet):
+    """
+    Used to create, read, delete, and list users. Two extra actions are available under the user instance (i.e. /user/1/) to increment and decrement the user points.
+    """
+    queryset = User.objects.all().order_by('-points')
+    serializer_class = UserSerializer
+
+    @action(detail=True, methods=['post'])
+    def increment(self, request, pk=None):
+        """
+        Used to increment user points by one.
+        """
+        user = self.get_object()
+        user.points += 1
+        user.save()
+
+        return Response(user.json())
+
+    @action(detail=True, methods=['post'])
+    def decrement(self, request, pk=None):
+        """
+        Used to decrement user points by one.
+        """
+        user = self.get_object()
+        user.points -= 1
+        user.save()
+
+        return Response(user.json())
