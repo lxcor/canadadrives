@@ -4,24 +4,16 @@ from rest_framework.response import Response
 from rest_framework.viewsets import GenericViewSet
 
 from leaderboard.models import User
-from leaderboard.serializers import UserSerializer, CreateUserSerializer
+from leaderboard.serializers import UserSerializer
 
 
-class CreateUserView(mixins.CreateModelMixin,
-                     GenericViewSet):
-    """
-    Used to create, read, delete, and list users. Two extra actions are available under the user instance (i.e. /user/1/) to increment and decrement the user points.
-    """
-    queryset = User.objects.all().order_by('-points')
-    serializer_class = CreateUserSerializer
-
-
-class UserViewSet(mixins.RetrieveModelMixin,
+class UserViewSet(mixins.CreateModelMixin,
+                  mixins.RetrieveModelMixin,
                   mixins.DestroyModelMixin,
                   mixins.ListModelMixin,
                   GenericViewSet):
     """
-    Used to create, read, delete, and list users. Two extra actions are available under the user instance (i.e. /user/1/) to increment and decrement the user points.
+    Used to create, retrieve, delete, and list users and also to increment and decrement user points.
     """
     queryset = User.objects.all().order_by('-points')
     serializer_class = UserSerializer

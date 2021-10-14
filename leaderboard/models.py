@@ -15,3 +15,10 @@ class User(models.Model):
             "points": self.points,
             "address": self.address,
         }
+
+    def save(self, *args, **kwargs):
+
+        if not self.id:
+            self.points = 0
+
+        return super(User, self).save(*args, **kwargs)

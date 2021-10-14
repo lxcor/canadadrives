@@ -1,7 +1,6 @@
 from rest_framework import routers
 
-from leaderboard.views import UserViewSet, CreateUserView
+from leaderboard.views import UserViewSet
 
 router = routers.DefaultRouter()
-router.register(r'user', CreateUserView)
-router.register(r'user', UserViewSet)
+router.register(r'users', UserViewSet)

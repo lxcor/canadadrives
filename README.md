@@ -17,15 +17,15 @@ Technology stack used:
 
 The following endpoints are available:
 
-| Path                | HTTP      | Description                   |
-|---------------------|-----------|-------------------------------|
-| user/               | GET       |List all existing users        |
-| user/               | POST      |Create new user                |
-| user/:id/           | GET       |Retrieve existing user details |
-| user/:id/           | DELETE    |Delete existing user           |
-| user/:id/increment/ | POST      |Increment existing user points |
-| user/:id/decrement/ | POST      |Decrement existing user points |
-| schema/ | GET     | Dynamicaly generated API Schema |
+| Url                 | Method    | Action | Description                    |
+|---------------------|-----------|--------|--------------------------------|
+| user/               | GET       | List   | all existing users             |
+| user/               | POST      | create | Create new user                |
+| user/:id/           | GET       | read   | Retrieve existing user details |
+| user/:id/           | DELETE    | delete | Delete existing user           |
+| user/:id/increment/ | POST      | custom | Increment existing user points |
+| user/:id/decrement/ | POST      | custom | Decrement existing user points |
+| schema/             | GET       | schema | Generated API Schema           |
 
 How to install the application:
 
