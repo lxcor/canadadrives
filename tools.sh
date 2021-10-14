@@ -14,7 +14,7 @@ case "$1" in
         echo 'venv-install'
 
         rm -rf $VENV
-        virtualenv $VENV
+        python3 -m venv $VENV
         $VPIP install -r requirements.txt
         ;;
 
