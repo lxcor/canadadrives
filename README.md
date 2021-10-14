@@ -3,6 +3,7 @@
 
 Prepared by Alex Alves for Canada Drives 
 
+
  ## Technology
  The following technologies were used in the application:
 
@@ -14,15 +15,15 @@ Prepared by Alex Alves for Canada Drives
 
 The following endpoints are available:
 
-| Url                         | Method    | Action | Description                    |
-|-----------------------------|-----------|--------|--------------------------------|
-| users/                      | GET       | list   | List all existing users        |
-| users/                      | POST      | create | Create new user                |
-| users/:id/                  | GET       | read   | Retrieve user details          |
-| users/:id/                  | DELETE    | delete | Delete existing user           |
-| users/:id/increment_points/ | POST      | custom | Increment user points          |
-| users/:id/decrement_points/ | POST      | custom | Decrement user points          |
-| schema/                     | GET       | schema | Generated API Schema           |
+| Url                         | Method    | Action | Description                     |
+|-----------------------------|-----------|--------|---------------------------------|
+| users/                      | GET       | list   | List all existing users         |
+| users/                      | POST      | create | Create a new user               |
+| users/:id/                  | GET       | read   | Retrieve the details of an user |
+| users/:id/                  | DELETE    | delete | Delete an existing user         |
+| users/:id/increment_points/ | POST      | custom | Increment the points of an user |
+| users/:id/decrement_points/ | POST      | custom | Decrement the points of an user |
+| schema/                     | GET       | schema | View API Schema                 |
 
 ## API Demo Server
 - Click [here](http://143.110.223.227) for a demo instance of the API running.
