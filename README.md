@@ -5,27 +5,22 @@
 
 Goal: Create an API for leaderboard application
 
-Technology stack used:
+Technology stack:
 - Ubuntu 18.04 
-- Python Django 
+- Python Django REST Framework 
 - SQLite
-
-
-
-- Python Django API with Django Rest Framework
-- Implementation using Class based ViewSet
 
 The following endpoints are available:
 
 | Url                 | Method    | Action | Description                    |
 |---------------------|-----------|--------|--------------------------------|
-| user/               | GET       | List   | all existing users             |
-| user/               | POST      | create | Create new user                |
-| user/:id/           | GET       | read   | Retrieve existing user details |
-| user/:id/           | DELETE    | delete | Delete existing user           |
-| user/:id/increment/ | POST      | custom | Increment existing user points |
-| user/:id/decrement/ | POST      | custom | Decrement existing user points |
-| schema/             | GET       | schema | Generated API Schema           |
+| users/               | GET       | List   | all existing users             |
+| users/               | POST      | create | Create new user                |
+| users/:id/           | GET       | read   | Retrieve existing user details |
+| users/:id/           | DELETE    | delete | Delete existing user           |
+| users/:id/increment/ | POST      | custom | Increment existing user points |
+| users/:id/decrement/ | POST      | custom | Decrement existing user points |
+| schema/              | GET       | schema | Generated API Schema           |
 
 
 ##How to install the application:
@@ -33,8 +28,8 @@ The following endpoints are available:
 - Install required Ubuntu 18.04 software
 ```console
 sudo apt update
-sudo apt install python3-pip
-sudo apt install python3-venv
+sudo apt install -y python3-pip
+sudo apt install -y python3-venv
 ```
 
 - Clone application code from GitHub
@@ -50,6 +45,8 @@ cd canadadrives/
 - Create virtual environment and install requirements
 ```console
 python3 -m venv venv
+venv/bin/pip3 install --upgrade pip
+venv/bin/pip install wheel
 venv/bin/pip3 install -r requirements.txt
 ```
 ##How to test the application:
