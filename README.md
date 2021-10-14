@@ -1,28 +1,28 @@
 # Leaderboard API
 ## BE Developer - Take home assignment
 
-#### Prepared by Alex Alves for Canada Drives
+Prepared by Alex Alves for Canada Drives 
 
- ## Technology stack
+ ## Technology
  The following technologies were used in the application:
 
 - Ubuntu 18.04 
 - Python Django REST Framework 
 - SQLite
 
-## API Endpoints
+## Endpoints
 
 The following endpoints are available:
 
-| Url                  | Method    | Action | Description                    |
-|----------------------|-----------|--------|--------------------------------|
-| users/               | GET       | list   | List all existing users        |
-| users/               | POST      | create | Create new user                |
-| users/:id/           | GET       | read   | Retrieve user details          |
-| users/:id/           | DELETE    | delete | Delete existing user           |
-| users/:id/increment/ | POST      | custom | Increment user points          |
-| users/:id/decrement/ | POST      | custom | Decrement user points          |
-| schema/              | GET       | schema | Generated API Schema           |
+| Url                         | Method    | Action | Description                    |
+|-----------------------------|-----------|--------|--------------------------------|
+| users/                      | GET       | list   | List all existing users        |
+| users/                      | POST      | create | Create new user                |
+| users/:id/                  | GET       | read   | Retrieve user details          |
+| users/:id/                  | DELETE    | delete | Delete existing user           |
+| users/:id/increment_points/ | POST      | custom | Increment user points          |
+| users/:id/decrement_points/ | POST      | custom | Decrement user points          |
+| schema/                     | GET       | schema | Generated API Schema           |
 
 ## API Demo Server
 - Click [here](http://143.110.223.227) for a demo instance of the API running.
@@ -42,12 +42,12 @@ sudo apt install -y python3-venv
 git clone git://github.com/lxcor/canadadrives.git
 ```
 
-- Enter into application's directory
+- Enter into the application's directory
 ```console
 cd canadadrives/
 ```
 
-- Create virtual environment and install requirements
+- Create a virtual environment and install requirements
 ```console
 python3 -m venv venv
 venv/bin/pip3 install --upgrade pip
@@ -56,13 +56,13 @@ venv/bin/pip3 install -r requirements.txt
 ```
 ## How to test the application:
 
-- Run unit tests from application's directory
+- Run unit tests from the application's directory
 ```console
 venv/bin/python3 manage.py test
 ```
 ## How to run the application:
 
-- Run the application from application's directory
+- Run the application the from application's directory
 ```console
 venv/bin/python3 manage.py runserver 0.0.0.0:8000 &
 ```
