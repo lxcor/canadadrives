@@ -27,6 +27,7 @@ The following endpoints are available:
 | user/:id/decrement/ | POST      | custom | Decrement existing user points |
 | schema/             | GET       | schema | Generated API Schema           |
 
+
 How to install the application:
 
 1. Install required Ubuntu 18.04 software
@@ -34,25 +35,24 @@ How to install the application:
 sudo apt update
 sudo apt install python3-pip
 sudo apt install python3-venv
-
-sudo apt -y upgrade
 ```
 
 2. Clone application code from GitHub
 ```console
 git clone git://github.com/lxcor/canadadrives.git
 ```
-3. Enter into application directory
+
+3. Enter into application's directory
 ```console
 cd canadadrives/
 ```
 
-2. Install application's virtual environment
-
+4. Create virtual environment and install requirements
 ```console
-./tools.sh venv-install
-```
+python3 -m venv venv
+venv/bin/pip3 install -r requirements.txt
 
+```
 How to test the application:
 
 1. Run unit tests
