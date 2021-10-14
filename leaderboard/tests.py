@@ -49,7 +49,7 @@ class UserTests(APITestCase):
 
     def test_create_user(self):
         """
-        Ensures a new user object can be created
+        Ensures a new user can be created.
         """
         url = "http://0.0.0.0:8000/users/"
         data = {'name': 'Regina', 'age': 89, 'address': 'Lake View'}
@@ -63,7 +63,7 @@ class UserTests(APITestCase):
 
     def test_increment_and_decrement_user_points(self):
         """
-        Ensures an existing user's points can be incremented and decremented by one
+        Ensures the points of an user can be incremented and decremented by one.
         """
         url = "http://0.0.0.0:8000/users/%s/increment_points/" % self.user.pk
         data = {}
