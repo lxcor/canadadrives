@@ -1,9 +1,7 @@
-# Canadadrives
-#### BE Developer - Take home assignment
-#### prepared by Alex Alves
+# Leaderboard API
+## BE Developer - Take home assignment
 
-
-Goal: Create an API for leaderboard application
+#### Prepared by Alex Alves for Canada Drives
 
 Technology stack:
 - Ubuntu 18.04 
@@ -21,6 +19,9 @@ The following endpoints are available:
 | users/:id/increment/ | POST      | custom | Increment existing user points |
 | users/:id/decrement/ | POST      | custom | Decrement existing user points |
 | schema/              | GET       | schema | Generated API Schema           |
+
+## API Demo Server
+- Click [here](http://143.110.223.227) for a demo instance of the API running.
 
 
 ## How to install the application:
