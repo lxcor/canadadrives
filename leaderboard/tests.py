@@ -8,44 +8,20 @@ class UserTests(APITestCase):
 
     def setUp(self):
         """
-        Create a new user object to be tested
+        Create a new user to be tested.
         """
         self.user = User.objects.create(name="Samantha", age=55, address="Boston")
         self.pk = self.user.pk
 
     def test_list_users(self):
         """
-        Ensures the existing users can be listed
+        Ensures the existing users can be listed.
         """
         url = "http://0.0.0.0:8000/users/"
         data = {}
         response = self.client.get(url, data, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(User.objects.count(), 1)
-
-    def test_retrieve_user(self):
-        """
-        Ensures the existing user can be retrieved
-        """
-        url = "http://0.0.0.0:8000/users/%s/" % self.user.pk
-        data = {}
-        response = self.client.get(url, data, format='json')
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(User.objects.count(), 1)
-        self.assertEqual(User.objects.get().name, 'Samantha')
-        self.assertEqual(User.objects.get().age, 55)
-        self.assertEqual(User.objects.get().address, 'Boston')
-        self.assertEqual(User.objects.get().points, 0)
-
-    def test_delete_user(self):
-        """
-        Ensure an existing user can be deleted.
-        """
-        url = "http://0.0.0.0:8000/users/%s/" % self.user.pk
-        data = {}
-        response = self.client.delete(url, data, format='json')
-        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
-        self.assertEqual(User.objects.count(), 0)
 
     def test_create_user(self):
         """
@@ -60,6 +36,30 @@ class UserTests(APITestCase):
         self.assertEqual(User.objects.last().age, 89)
         self.assertEqual(User.objects.last().address, 'Lake View')
         self.assertEqual(User.objects.last().points, 0)
+
+    def test_retrieve_user(self):
+        """
+        Ensures an user object can be retrieved.
+        """
+        url = "http://0.0.0.0:8000/users/%s/" % self.user.pk
+        data = {}
+        response = self.client.get(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(User.objects.count(), 1)
+        self.assertEqual(User.objects.get().name, 'Samantha')
+        self.assertEqual(User.objects.get().age, 55)
+        self.assertEqual(User.objects.get().address, 'Boston')
+        self.assertEqual(User.objects.get().points, 0)
+
+    def test_delete_user(self):
+        """
+        Ensurse an existing user can be deleted.
+        """
+        url = "http://0.0.0.0:8000/users/%s/" % self.user.pk
+        data = {}
+        response = self.client.delete(url, data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
+        self.assertEqual(User.objects.count(), 0)
 
     def test_increment_and_decrement_user_points(self):
         """
