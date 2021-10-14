@@ -32,15 +32,38 @@ How to install the application:
 1. Install required Ubuntu 18.04 software
 ```console
 sudo apt update
+sudo apt install python3-pip
+sudo apt install python3-venv
+
 sudo apt -y upgrade
-git clone git://github.com/lxcor/canadadrives.git
-cd canadadrives/
-./tools.sh venv-install
 ```
 
 2. Clone application code from GitHub
+```console
+git clone git://github.com/lxcor/canadadrives.git
+```
+3. Enter into application directory
+```console
+cd canadadrives/
+```
 
 2. Install application's virtual environment
 
-How to start/run the application
-3. Run 
+```console
+./tools.sh venv-install
+```
+
+How to test the application:
+
+1. Run unit tests
+```console
+venv/bin/python3 manage.py test
+```
+How to run the application:
+
+1. Run the application
+```console
+venv/bin/python3 manage.py runserver 0.0.0.0:8000 &
+```
+```
+
