@@ -3,21 +3,25 @@
 
 #### Prepared by Alex Alves for Canada Drives
 
-Technology stack:
+ ## Technology stack
+ The following technologies were used in the application:
+
 - Ubuntu 18.04 
 - Python Django REST Framework 
 - SQLite
 
+## API Endpoints
+
 The following endpoints are available:
 
-| Url                 | Method    | Action | Description                    |
-|---------------------|-----------|--------|--------------------------------|
-| users/               | GET       | List   | all existing users             |
+| Url                  | Method    | Action | Description                    |
+|----------------------|-----------|--------|--------------------------------|
+| users/               | GET       | list   | List all existing users        |
 | users/               | POST      | create | Create new user                |
-| users/:id/           | GET       | read   | Retrieve existing user details |
+| users/:id/           | GET       | read   | Retrieve user details          |
 | users/:id/           | DELETE    | delete | Delete existing user           |
-| users/:id/increment/ | POST      | custom | Increment existing user points |
-| users/:id/decrement/ | POST      | custom | Decrement existing user points |
+| users/:id/increment/ | POST      | custom | Increment user points          |
+| users/:id/decrement/ | POST      | custom | Decrement user points          |
 | schema/              | GET       | schema | Generated API Schema           |
 
 ## API Demo Server
