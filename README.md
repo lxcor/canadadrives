@@ -28,42 +28,40 @@ The following endpoints are available:
 | schema/             | GET       | schema | Generated API Schema           |
 
 
-How to install the application:
+##How to install the application:
 
-1. Install required Ubuntu 18.04 software
+- Install required Ubuntu 18.04 software
 ```console
 sudo apt update
 sudo apt install python3-pip
 sudo apt install python3-venv
 ```
 
-2. Clone application code from GitHub
+- Clone application code from GitHub
 ```console
 git clone git://github.com/lxcor/canadadrives.git
 ```
 
-3. Enter into application's directory
+- Enter into application's directory
 ```console
 cd canadadrives/
 ```
 
-4. Create virtual environment and install requirements
+- Create virtual environment and install requirements
 ```console
 python3 -m venv venv
 venv/bin/pip3 install -r requirements.txt
-
 ```
-How to test the application:
+##How to test the application:
 
-1. Run unit tests
+- Run unit tests
 ```console
 venv/bin/python3 manage.py test
 ```
-How to run the application:
+##How to run the application:
 
-1. Run the application
+- Run the application
 ```console
 venv/bin/python3 manage.py runserver 0.0.0.0:8000 &
-```
 ```
 
