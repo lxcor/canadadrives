@@ -23,13 +23,13 @@ The following endpoints are available:
 | users/:id/                  | DELETE    | delete | Delete an existing user         |
 | users/:id/increment_points/ | POST      | custom | Increment the points of an user |
 | users/:id/decrement_points/ | POST      | custom | Decrement the points of an user |
-| schema/                     | GET       | schema | View API Schema                 |
+| schema/                     | GET       | schema | View the API's Schema           |
 
 ## API Demo Server
-- Click [here](http://143.110.223.227) for a demo instance of the API running.
+- Click [here](http://143.110.223.227) for a running instance of the API.
 
 
-## How to install the application:
+## How to install the application
 
 - Install required Ubuntu 18.04 software
 ```console
@@ -55,16 +55,15 @@ venv/bin/pip3 install --upgrade pip
 venv/bin/pip install wheel
 venv/bin/pip3 install -r requirements.txt
 ```
-## How to test the application:
+## How to test the application
 
 - Run unit tests from the application's directory
 ```console
 venv/bin/python3 manage.py test
 ```
-## How to run the application:
+## How to run the application
 
 - Run the application the from application's directory
 ```console
 venv/bin/python3 manage.py runserver 0.0.0.0:8000 &
 ```
-
