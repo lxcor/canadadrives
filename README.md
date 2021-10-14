@@ -23,7 +23,7 @@ The following endpoints are available:
 | schema/              | GET       | schema | Generated API Schema           |
 
 
-##How to install the application:
+## How to install the application:
 
 - Install required Ubuntu 18.04 software
 ```console
@@ -49,15 +49,15 @@ venv/bin/pip3 install --upgrade pip
 venv/bin/pip install wheel
 venv/bin/pip3 install -r requirements.txt
 ```
-##How to test the application:
+## How to test the application:
 
-- Run unit tests
+- Run unit tests from application's directory
 ```console
 venv/bin/python3 manage.py test
 ```
-##How to run the application:
+## How to run the application:
 
-- Run the application
+- Run the application from application's directory
 ```console
 venv/bin/python3 manage.py runserver 0.0.0.0:8000 &
 ```
