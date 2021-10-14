@@ -19,7 +19,7 @@ class UserViewSet(mixins.CreateModelMixin,
     serializer_class = UserSerializer
 
     @action(detail=True, methods=['post'])
-    def increment(self, request, pk=None):
+    def increment_points(self, request, pk=None):
         """
         Used to increment user points by one.
         """
@@ -30,7 +30,7 @@ class UserViewSet(mixins.CreateModelMixin,
         return Response(user.json())
 
     @action(detail=True, methods=['post'])
-    def decrement(self, request, pk=None):
+    def decrement_points(self, request, pk=None):
         """
         Used to decrement user points by one.
         """
