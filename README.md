@@ -25,9 +25,6 @@ The following endpoints are available:
 | users/:id/decrement_points/ | POST      | custom | Decrement the points of an user |
 | schema/                     | GET       | schema | View the API's Schema           |
 
-## API Demo Server
-- Click [here](http://143.110.223.227) for a running instance of the API.
-
 
 ## How to install the application
 
